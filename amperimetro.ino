@@ -18,7 +18,7 @@ void loop()
 
   potencia = Irms * tensao;   // Calcula o valor da Potencia Instantanea
   
-  Serial.println("{\"Corrente\":  "+(String)Irms+", \"Potencia\": "+(String)potencia+"}");   // Envia saida no formato json
+  Serial.print("{\"Corrente\":  "+(String)Irms+", \"Potencia\": "+(String)potencia+"}");   // Envia saida no formato json
 
   delay(1000);
 }
